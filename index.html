@@ -5,51 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery Placeholder Title</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <center>
-        <img src="img/BakeryPlaceholder.png" alt="Placeholder for a logo" width="15%" height="15%">
-    </center>
-    <center><h1>BAKERY</h1></center>
-    <ul>
-        <!--El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.-->
-        <li>Chocolate</li>
-        <li>Fresa</li>
-        <li>Tres Leches</li>
-        <li>Vainilla</li>
-        <li>Platano</li>
-        <!--El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.-->
-    </ul>
+    <header>
+        <center>
+            <img src="img/BakeryPlaceholder.png" alt="Placeholder for a logo" width="10%" height="10%">
+        </center>
+        <center>
+            <h1>Ice Cream</h1>
+        </center>
+    </header>
+    <div class="sabores">
+        <h2 class="subtitulo">Sabores</h2>
+        <div class="pasteles">
+            <div class="box">
+                <div class="imagen"></div>
+                <label for="cake1"><input type="checkbox"> Chocolate <br />$250.00</p>
+                </label>
+            </div>
+            <div class="box">
+                <div class="imagen"></div>
+                <label for="cake2"><input type="checkbox"> Fresa <br />$250.00</p>
+                </label>
+            </div>
+            <div class="box">
+                <div class="imagen"></div>
+                <label for="cake3"><input type="checkbox"> Limon <br />$250.00</p>
+                </label>
+            </div>
+            <div class="box">
+                <div class="imagen"></div>
+                <label for="cake4"><input type="checkbox"> Tres Leches <br />$250.00</p>
+                </label>
+            </div>
+            <div class="box">
+                <div class="imagen"></div>
+                <label for="cake5"><input type="checkbox"> Vainilla <br />$250.00</p>
+                </label>
+            </div>
+            <div class="box">
+                <div class="imagen"></div>
+                <label for="cake6"><input type="checkbox"> Platano <br />$250.00</p>
+                </label>
+            </div>
+        </div>
+            <!--El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.-->
+            <!--El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.-->
+    </div>
     <!--El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.-->
-    <ul>
-        <li>
-            Velas
-        </li>
-        <li>
-            Nombre
-        </li>
-        <li>
-            Mensaje
-        </li>
-        <li>
-            Decoraciones(imagen personalizada)
-        </li>
-        <li>
-            Frutas
-        </li>
+    <div class="decoraciones">
+        <h2 class="subtitulo">Decoraciones</h2>
+        <div class="box">
+            <div class="imagen"></div>
+            <label for="adorno1"><input type="checkbox"> Chispas Arcoirs <br />$5.00</p>
+            </label>
+        </div>
+        <div class="box">
+            <div class="imagen"></div>
+            <label for="adorno1"><input type="checkbox"> Chispas de Chocolate <br />$5.00</p>
+            </label>
+        </div>
+        <div class="box">
+            <div class="imagen"></div>
+            <label for="adorno1"><input type="checkbox"> Cerezas <br />$5.00</p>
+            </label>
+        </div>
+    </div>
         <!--El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.-->
-    </ul>
-
-    <form action="input">Nombre
         <!--El cliente de la pastelería necesita poner en un formulario su pedido.-->
     <!--El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos.-->
-        <input type="text">
+        <label for="pnombre">Primer Nombre:</label><br>
+        <input type="text" id="pnombre" name="pnombre"><br>
+        <label for="apellidop">Apellido Paterno:</label><br>
+        <input type="text" id="apellidop" name="apellidop"><br>
+        <label for="phone">Telefono:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <label for="email">E-Mail:</label><br>
+        <input type="text" id="email" name="email"><br>
+        DESCRIPCION GENERAL DEL PASTEL Y SELECCION DE SABORES Y ADORNOS
     </form>
-    
     <!--La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.-->
 </body>
 <footer>
     CONTACTO
+    DIRECCION
+    TELEFONO
+    HORARIOS DE ATENCION
 </footer>
 </html>
 
