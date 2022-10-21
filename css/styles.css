@@ -112,24 +112,28 @@ li {
     justify-content: center;
     padding: 4rem;
 }
-.sign-up {
+.buy{
     background-color: #3882f6;
     color: #E5E7EB;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 1000px;
     border-radius: 10px;
     
 }
-.bttnsignup {
+.bttnbuy {
     background-color: #3882F6;
-    border-radius: 5px;
+    border-radius: 6px;
     border-style: solid;
     border-color: #E5E7EB;
     width: 100px;
-    height: 25px;
+    height: 70px;
+    
+}
+.bttnbuy:hover{
+    background-color: red;
 }
 .footer {
     margin: -8px;
@@ -137,4 +141,13 @@ li {
     background-color: #9C7B5D;
     color: #E5E7EB;
     text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
