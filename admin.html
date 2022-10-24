@@ -4,91 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Placeholder Title</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Admin Page</title>
 </head>
 <body>
     <header>
-        <center>
-            <img src="img/BakeryPlaceholder.png" alt="Placeholder for a logo" width="10%" height="10%">
-        </center>
-        <center>
-            <h1>Ice Cream</h1>
-        </center>
+        <div class="header">
+            <h1 class="header-title">
+                <img src="img/IceCreamLogo.png" alt="" width="15%">
+            </h1>
+        
+            <ul>
+                <a href="index.html#"><li class="link">Home</li></a>
+                <a href="index.html#menu"><li class="link">Menu</li></a>
+                <a href="index.html#contacto"><li class="link">Contacto</li></a>
+                <a href="compras.html#pedido"><li class="link">Pedido</li></a>
+            </ul>
+        </div>
     </header>
-    <div class="sabores">
-        <h2 class="subtitulo">Sabores</h2>
-        <div class="helados">
-            <div class="box">
-                <div class="imagen"></div>
-                Chocolate <br />$250.00
-            </div>
-            <div class="box">
-                <div class="imagen"></div>
-                Fresa <br />$250.00
-            </div>
-            <div class="box">
-                <div class="imagen"></div>
-                Limon <br />$250.00
-            </div>
-            <div class="box">
-                <div class="imagen"></div>
-                Tres Leches <br />$250.00
-            </div>
-            <div class="box">
-                <div class="imagen"></div>
-                Vainilla <br />$250.00
-            </div>
-            <div class="box">
-                <div class="imagen"></div>
-                Platano <br />$250.00
-            </div>
+    <section class="container">
+        <br>
+        <div class="admin-info">
+        <div class="inventory">
+            <center>
+                <table class="pedidos">
+                <tr>
+                    <th>id</th>
+                    <th>Sabor</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Chocolate</td>
+                    <td>1.0Lts</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Vainilla</td>
+                    <td>3.0Lts</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Fresas</td>
+                    <td>0.5Lts</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Mango</td>
+                    <td>2.0Lts</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Nuez</td>
+                    <td>7.0Lts</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Napolitano</td>
+                    <td>4.0Lts</td>
+                </tr>
+            </table>
+        </center>
         </div>
-            <!--El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.-->
-            <!--El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.-->
-    </div>
-    <!--El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.-->
-    <div class="decoraciones">
-        <h2 class="subtitulo">Decoraciones</h2>
-        <div class="box">
-            <div class="imagen"></div>
-            <label for="adorno1"><input type="checkbox"> Chispas Arcoirs <br />$5.00</p>
-            </label>
+        <div class="inventory-decoration">
+            <center>
+                <table class="pedidos">
+                <tr>
+                    <th>id</th>
+                    <th>Decoraciones</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Chispas de Chocolate</td>
+                    <td>1.0Kg</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Chispas de arcoiris</td>
+                    <td>1.5Kg</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Cerezas</td>
+                    <td>1.0Kg</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Galletas</td>
+                    <td>3.0Kg</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Fresas</td>
+                    <td>2.5Kg</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Canela</td>
+                    <td>2.9Kg</td>
+                </tr>
+            </table>
+        </center>
         </div>
-        <div class="box">
-            <div class="imagen"></div>
-            <label for="adorno1"><input type="checkbox"> Chispas de Chocolate <br />$5.00</p>
-            </label>
+        <br>
+        <h2 class="pedidos">Pedidos</h2>
+            <table class="pedidos">
+                <tr>
+                    <th>id</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Correo Electrónico</th>
+                    <th>Descripción</th>
+                    <th>Direccion</th>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Liliana Bañegil Veliz</td>
+                    <td>+52(444)-3337547</td>
+                    <td>ealiliana0@yopmail.com</td>
+                    <td>Helado de fresa con chispas de chocolate</td>
+                    <td>Calle Santo del Jehova No. 349</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Eleazar R. Barragan Fernandino</td>
+                    <td>+52(555)-3338024</td>
+                    <td>fpfernandino15@yopmail.com </td>
+                    <td>Helado napolitano con chispas de arcoiris</td>
+                    <td>Avenida Dadin No. 386</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Cayetano Estanislao Sanabria Bayano</td>
+                    <td>+52(454)-0222440</td>
+                    <td>fmcayetanoestanislao12@yopmail.com</td>
+                    <td>Helado de chocolate con galletas</td>
+                    <td>Avenida Rabinal No. 515</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Bella Venegas Medina</td>
+                    <td>+52(343)-1221976</td>
+                    <td>inmedina13@yopmail.com</td>
+                    <td>Helado de vainilla</td>
+                    <td>Calle Aycart No. 23</td>
+                </tr>
+            </table>
         </div>
-        <div class="box">
-            <div class="imagen"></div>
-            <label for="adorno1"><input type="checkbox"> Cerezas <br />$5.00</p>
-            </label>
+    </section>
+    <br>
+    <footer id="contacto" class="footer">
+        <div>
+            <p>Encuentranos en <span class="info">Avenida Siempreviva 742</span></p>
+            <p>Puedes realizar tu pedido al <span class="info">Telefono (555)-123-456-7890</span></p>
+            <p>
+                Horarios <span class="info"> Lunes a Viernes </span > de <span class="info"> 10:00 a.m a 5:00 p.m</span>
+            </p>
+            <p>Copyright @ LaunchX 2022</p>
         </div>
-    </div>
-        <!--El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.-->
-        <!--El cliente de la pastelería necesita poner en un formulario su pedido.-->
-    <!--El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos.-->
-        <label for="pnombre">Primer Nombre:</label><br>
-        <input type="text" id="pnombre" name="pnombre"><br>
-        <label for="apellidop">Apellido Paterno:</label><br>
-        <input type="text" id="apellidop" name="apellidop"><br>
-        <label for="phone">Telefono:</label><br>
-        <input type="text" id="phone" name="phone"><br>
-        <label for="email">E-Mail:</label><br>
-        <input type="text" id="email" name="email"><br>
-        DESCRIPCION GENERAL DEL PASTEL Y SELECCION DE SABORES Y ADORNOS
-    </form>
-    <!--La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.-->
+    </footer>
 </body>
-<footer>
-    CONTACTO
-    DIRECCION
-    TELEFONO
-    HORARIOS DE ATENCION
-</footer>
 </html>
-
-<!--El pastelero necesita tener la información de la cantidad de sabores que le quedan para hacer los pasteles.-->
-    <!--El pastelero necesita tener la información de la cantidad de adornos que le quedan para hacer los pasteles.-->
-    <!--El pastelero necesita una tabla donde aparezcan los pedidos que se han realizado con los datos del formulario.-->
