@@ -15,9 +15,10 @@
             </h1>
         
             <ul>
-                <li class="link">Home</li>
-                <li class="link">Menu</li>
-                <li class="link">Contacto</li>
+                <a href="index.html"><li class="link">Home</li></a>
+                <a href="compras.html#menu"><li class="link">Menu</li></a>
+                <a href="compras.html#contacto"><li class="link">Contacto</li></a>
+                <a href="compras.html#pedido"><li class="link">Pedido</li></a>
             </ul>
         </div>
         <div class="header-container">
@@ -28,32 +29,31 @@
     </header>
     <section class="container">
         <div class="information">
-            <h2 class="subtitle">Nuestros sabores de helado.</h2>
+            <h2 id="menu" class="subtitle">Nuestros sabores de helado.</h2>
             <div class="text">
                 <div class="box">
-                    <div class="subimage"></div>
-                    
-                    <p class="subtext"><input type="checkbox">Chocolate $50.00</p>
+                    <div class="subimage"><img class="img" src="img/chocolate.jpeg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Chocolate $40.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Vainilla $50.00</p>
+                    <div class="subimage"><img class="img" src="img/vainilla.jpeg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Vainilla $30.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
+                    <div class="subimage"><img class="img" src="img/fresas.jpg" width="100px" height="100px" alt=""></div>
                     <p class="subtext"><input type="checkbox"> Fresas  $50.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"><img src="img/icecream.jpg" width="100px" height="100px" alt=""></div>
-                    <p class="subtext"><input type="checkbox">Mango $50.00</p>
+                    <div class="subimage"><img class="img" src="img/mango.jpeg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Mango $60.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
+                    <div class="subimage"><img class="img" src="img/nuex.jpg" width="100px" height="100px" alt=""></div>
                     <p class="subtext"><input type="checkbox">Nuez $50.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Napolitano $50.00</p>
+                    <div class="subimage"><img class="img" src="img/napolitano.jpg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Napolitano $40.00</p>
                 </div>
             </div>
         </div>
@@ -62,35 +62,35 @@
             <h2 class="subtitle">Elige las decoraciones.</h2>
             <div class="text">
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Chispas de Chocolate $50.00</p>
+                    <div class="subimage"><img class="img" src="img/chispas de chocolate.jpeg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Chispas de Chocolate $15.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Chispas de Arcoirs $50.00</p>
+                    <div class="subimage"><img class="img" src="img/chispas de arcoiris.jpg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Chispas de Arcoirs $13.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Cerezas $50.00</p>
+                    <div class="subimage"><img class="img" src="img/cerezas.jpg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Cerezas $10.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Galletas $50.00</p>
+                    <div class="subimage"><img class="img" src="img/galletas.jpg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Galletas $12.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Fresas $50.00</p>
+                    <div class="subimage"><img class="img" src="img/fresa.jpg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Fresas $15.00</p>
                 </div>
                 <div class="box">
-                    <div class="subimage"></div>
-                    <p class="subtext"><input type="checkbox">Canela $50.00</p>
+                    <div class="subimage"><img class="img" src="img/canela.jpg" width="100px" height="100px" alt=""></div>
+                    <p class="subtext"><input type="checkbox">Canela $10.00</p>
                 </div>
             </div>
         </div>
         
         <div class="action">
             <div class="buy">
-                <div class="call">
+                <div id="pedido" class="call">
                     <h3>Tus Datos</h3>
                     <p>Nombre:
                         <br><input type="text" placeholder="Nombre">
@@ -101,19 +101,27 @@
                     <p>Correo Electrónico:
                         <br><input type="text" placeholder="ejemplo@ejemplo.com">
                     </p>
+                    <p>Descripción:
+                        <br><textarea class="description" placeholder="Descripción de el pedido."></textarea>
+                    </p>
                     <br>
                 </div>
                 <button class="bttnbuy"><a href="#"> Comprar </a></button>
                 <br>
             </div>
         </div>
-        <div class="quote-text">
-            <p class="quote">Los mejores helados que se pueden comprar por internet. Recomedadisimos <3</p>
-            <p class="quote-autor">-El Jefe, Launch X</p>
-        </div>
+        <!--<div class="quote-text">
+            <p class="quote"></p>
+            <p class="quote-autor"></p>
+        </div>-->
     </section>
-    <footer class="footer">
-        <div >
+    <footer id="contacto" class="footer">
+        <div>
+            <p>Encuentranos en <span class="info">Avenida Siempreviva 742</span></p>
+            <p>Puedes realizar tu pedido al <span class="info">Telefono (555)-123-456-7890</span></p>
+            <p>
+                Horarios <span class="info"> Lunes a Viernes </span > de <span class="info"> 10:00 a.m a 5:00 p.m</span>
+            </p>
             <p>Copyright @ LaunchX 2022</p>
         </div>
     </footer>
